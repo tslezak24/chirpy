@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"internal/database"
+	"github.com/tslezak24/chirpy/tree/main/internal/database"
 	"log"
 	"net/http"
 )
