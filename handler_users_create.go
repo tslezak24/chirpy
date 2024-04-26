@@ -3,6 +3,8 @@ package main
 import (
 	"encoding/json"
 	"errors"
+	"internal/auth"
+	"internal/database"
 	"net/http"
 )
 
@@ -37,7 +39,7 @@ func (cfg *apiConfig) handlerUsersCreate(w http.ResponseWriter, r *http.Request)
 
 	user, err := cfg.DB.CreateUser(params.Email, hashedPassword)
 	if err != nil {
-		if errors.Is(err, datab.ErrAlreadyExists) {
+		if errors.Is(err, database.ErrAlreadyExists) {
 			respondWithError(w, http.StatusConflict, "User already exists")
 			return
 		}
