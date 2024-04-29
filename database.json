@@ -1,1 +1,1 @@
-{"chirps":{},"users":{"1":{"id":1,"email":"saul@bettercall.com","hashed_password":"$2a$10$SvCHcZIWPMeHd/pgPhc33.7YopfLrcrOlPZ9xM3umKR7zvkFnXLWK"}}}
+{"chirps":{},"users":{"1":{"id":1,"email":"walt@breakingbad.com","hashed_password":"$2a$10$diMSOM3LCp91slCuySZvJelLzYSDjXf1g6uf2Ggy1tG62HllexOa6","is_chirpy_red":false}},"revocations":{}}
